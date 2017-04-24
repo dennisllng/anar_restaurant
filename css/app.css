@@ -1,0 +1,78 @@
+
+nav {
+  background-color: red;
+}
+
+.backgroundimage {
+  height: 250px;
+  width: 100%;
+  background-image: url(../img/restaurant.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-left: 50px;
+}
+
+.backgroundimage h1, .backgroundimage h3 {
+  margin-bottom: -15px;
+  text-shadow: 2px 1px 5px black;
+}
+
+.nav li a:visited, .nav li a:link{
+  color: #d21c24;
+  font-size: 28px;
+}
+
+
+#anarlogo img {
+  height: 300px;
+}
+
+
+
+footer ul {
+  list-style-type: none;
+}
+
+/*===============================================================*/
+
+@media screen and (max-width:1024px) {
+
+  .backgroundimage {
+    height: 250px;
+    width: 100%;
+    background-image: url(../img/restaurant-small.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-left: 25px;
+  }
+
+
+  .nav li a:visited, .nav li a:link{
+    color: #d21c24;
+    font-size: 17px;
+  }
+
+
+  #anarlogo img{
+    height: 150px;
+
+
+}
+
+
+
+
+.backgroundimage h1, .backgroundimage h3 {
+  margin-bottom: -15px;
+  text-shadow: 2px 1px 5px black;
+
+  }
+}
+
+
+.top-bar {
+  background: none repeat scroll 0 0 red;
+}
+.top-bar a {color:black;}
