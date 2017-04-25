@@ -1,4 +1,33 @@
+/*font-family: 'Mukta Vaani', sans-serif;
+font-family: 'Droid Sans', sans-serif;
+font-family: 'Palanquin Dark', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Khand', sans-serif;
+font-family: 'Jura', sans-serif;*/
 
+a{
+  color: black;
+  font-family: font-family: 'Mukta Vaani', sans-serif;
+  font-size: 21px;
+}
+
+a:hover {
+  animation-name: navhover;
+  animation-duration: 1.7s;
+  border-radius: 5px;
+  animation-fill-mode: forwards;
+  }
+
+@keyframes navhover {
+0% {background-color: #fff;}
+100% {background: red; color: white;}
+
+
+}
 nav {
   background-color: red;
 }
