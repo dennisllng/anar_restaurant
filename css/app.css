@@ -8,6 +8,16 @@ font-family: 'Shadows Into Light', cursive;
 font-family: 'Poiret One', cursive;
 font-family: 'Khand', sans-serif;
 font-family: 'Jura', sans-serif;*/
+.top-bar-left {
+  width: 280px;
+}
+.tagh {
+display:
+  position: relative;
+  top: 29px;
+}
+
+
 #bgvid {
   width: 110%;
   margin-left: -5%;
@@ -45,14 +55,16 @@ a{
   font-family: font-family: 'Mukta Vaani', sans-serif;
   font-size: 21px;
   padding: 8px;
+
 }
 
-a:hover {
+/*a:hover {
   animation-name: navhover;
   animation-duration: 1s;
   border-radius: 5px;
   animation-fill-mode: forwards;
   }
+  */
 
 @keyframes navhover {
 0% {background-color: #fff;}
@@ -137,6 +149,11 @@ footer ul {
 
 
 .top-bar {
-  background: none repeat scroll 0 0 red;
+  background: none repeat scroll 0 0 ;
 }
 .top-bar a {color:black;}
+
+
+
+#logo a{background: white url("../img/anarlogo.svg") no-repeat; text-indent: -100em;
+display: block; height:126px; width:205px; border:1px solid green;}
