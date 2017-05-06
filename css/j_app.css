@@ -10,6 +10,22 @@ font-family: 'Khand', sans-serif;
 font-family: 'Jura', sans-serif;
 font-family: 'Kaushan Script', cursive;
 */
+@media screen only (max-width:950px)
+       {
+                    a img {
+                      width: 250px;
+                    }
+                    .biggerpic{
+                      width: 50%;
+                    }
+
+                    .chefs img {
+                      width: 250px;
+                      border-radius: 10px;
+
+                    }
+
+      }
 img {
   border-radius: 4px;
 }
@@ -18,25 +34,36 @@ h2 {
   color: black;
   padding-top: 10px;
 }
+h3{
+  color: black;
+}
 h5 {
   font-family: 'Poiret One', cursive;
 color: black;
 }
 .chefs{
   display: flex;
-
-  background: linear-gradient(#fff, #fff);
+flex-direction: row;
+flex-grow: 1;
+flex-wrap: wrap;
+justify-content: center;
+  /*background: linear-gradient(#fff, #fff);*/
   color: black;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 0px;
+}
 
-
+.chefs img {
+  width: 12vw;
+  border-radius: 10px;
 
 }
+
+
 .bggradient {
   padding: 30px;
-    background: linear-gradient(#fff, #fff);
+/*    background: linear-gradient(#fff, #fff); */
 /*  background: linear-gradient(#642a28, black);*/
   margin-bottom: 30px;
   border-radius: 0px 0px 8px 8px;
@@ -106,10 +133,10 @@ nav ul li a:hover {
 
 
 
-/*body {
+body {
   background: linear-gradient(#642a28, black);
  padding-top: 75px;
-}*/
+}
 
 
 //////////////////////////////////////////////////////////////////
@@ -131,8 +158,27 @@ nav ul li a:hover {
               bottom: 200px;
             }
 
+            .chefs{
+              display: inline-block;
+              position: relative;
+            }
+
+            .chefs img {
+              width: 150px;
+              border-radius: 0px;
+              display: inline-block;
+              position: relative;
+              justify-content: flex-start;
+            }
+
+
+
+
 
 }
+
+
+
 
 /* JAMIE CSS BELOW */
 h2 {
@@ -142,6 +188,296 @@ body {
   background: white;
  padding-top: 75px;
 }
-.accordian {
-  font-color: black;
+
+.accordion {
+  background-color: #242424;
+  color: white;
+}
+
+.accordion-content {
+  /*background-color: #242424;
+  color: white;*/
+  background-image:url('../img/paper_texture.png');
+  color: black;
+}
+
+.map {
+  width: 100%;
+}
+iframe {border-radius: 10px;}
+
+
+
+
+
+
+/*  new changes   */
+
+
+
+
+
+
+/* /// Dennis /// */
+.cover-background {
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+img{
+  border-radius: 0px;
+}
+.title-large {
+    font-size: 20px;
+    line-height: 30px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.title-small {
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+* {
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ ::selection {
+    color: #000;
+    background: #dcdcdc;
+}
+
+
+
+::-moz-selection {
+    color: #000;
+    background: #dcdcdc;
+}
+
+.restaurant-dishes {
+    width: 450px;
+    height: 550px;
+    margin-top: 45px;
+}
+
+#menu .container-fluid {
+    left: -7px;
+    position: relative;
+}
+
+
+.restaurant-menu {
+    min-height: 740px;
+    padding-top: 15px;
+}
+
+.restaurant-menu:hover .restaurant-menu-image img {
+    opacity: .5
+}
+
+.restaurant-menu-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.restaurant-menu-text {
+    border: 8px solid #d8b75f;
+    position: absolute;
+    transition: all 400ms ease-out 0s;
+    opacity: 0;
+    z-index: 2;
+    height: calc(100% - 80px);
+    width: calc(100% - 100px);
+    left: 57px;
+    top: -42px;
+}
+
+.restaurant-menu:hover .restaurant-menu-text {
+    opacity: 1;
+    top: 42px
+}
+
+.restaurant-menu-text-inner {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menu-item {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 17px 0 22px 0;
+    float: left;
+    width: 100%
+}
+0
+.menu-item:first-child {
+    padding-top: 0
+}
+
+.menu-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none
+}
+
+.menu-item img {
+    max-height: 80px
+}
+
+.menu-text, .menu-img {
+    min-height: 80px;
+    position: relative
+}
+
+.menu-text-sub {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    position: absolute;
+    top: 50%;
+}
+
+.menu-item p {
+    line-height: 20px;
+    margin: 0 0 5px 0
+}
+
+.restaurant-menu-background {
+    height: calc(100% - 46%);
+    width: calc(100% - 46%);
+    left: 23%;
+    top: 23%;
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+}
+
+.restaurant-menu-border {
+    border: 6px solid rgba(0, 0, 0, .1);
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.restaurant-menu-item {
+    position: absolute;
+    width: 100%;
+    padding: 0 15px;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+}
+.display-block {
+    display: block;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-lr {
+    margin-left: 0;
+    margin-right: 0;
+}
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+.margin-four {
+    margin: 2.5%;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+.position-relative {
+    position: relative;
+    z-index: 5
+}
+.overflow-hidden {
+    overflow: hidden
+}
+
+span.food{
+  color: #614c45;
+  text-transform: uppercase;
+}
+
+
+
+
+@keyframes navhover {
+    0% {}
+    100% {
+        background: #383838;
+        color: white;
+    }
+}
+
+
+
+
+body{
+background-image:url('../img/paper_texture.png');
+
+}
+
+
+//////////////////////////////////////////////////////////////////
+@media screen and (max-width: 950px) {
+    nav {
+        padding-top: 5px;
+        font-family: 'Dosis', sans-serif;
+        font-size: 4px;
+    }
+    .hours {
+        height: 200px;
+    }
+
+
+}
+
+
+
+
+@@media screen and (min-width:951px) {
+  .chefs img {
+    width: 12vw;
+    border-radius: 10px;
+
+  }
+
+
 }
