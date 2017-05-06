@@ -217,6 +217,8 @@ iframe {border-radius: 10px;}*/
 	padding:.875em 0;
 	text-indent:1%;
 	border-top:1px dotted #ccc;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
 	}
 	.accBox:hover {
 	background: #D8B75F;
@@ -229,28 +231,31 @@ iframe {border-radius: 10px;}*/
   /*padding:2%;*/
 	background-image:url('../img/paper_texture.png');
   border-top:1px dotted #ccc;
+  font-family: 'Dosis', sans-serif;
 	}
 
-  .accWrap2 {
-  	max-width: 100%;
-  	margin: 1em auto;
-  	}
-  .accBox2 {
-    width:100%;
-  	float: left;
-  	font-size:.875em;
-  	font-weight:700;
-  	padding:.875em 0;
-  	}
-  	.accBox2:hover {
-  	color: gray;
-    cursor:pointer;
-  	}
-  .accContent2 {
-  	width: 100%;
-  	float: left;
-    padding:2%;
-  	}
+.accWrap2 {
+  max-width: 100%;
+  margin: 1em auto;
+  }
+.accBox2 {
+  width:100%;
+  float: left;
+  font-size:.875em;
+  font-weight:700;
+  padding:.875em 0;
+  font-family: 'Dosis', sans-serif;
+  }
+.accBox2:hover {
+  color: gray;
+  cursor:pointer;
+  }
+.accContent2 {
+  width: 100%;
+  float: left;
+  padding:2%;
+  font-family: 'Dosis', sans-serif;
+  }
 
 
 /* ////// ACCORDIAN TEST ////// */
