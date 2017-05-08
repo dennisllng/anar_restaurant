@@ -74,6 +74,10 @@ nav.top-bar {
     font-size: 50px;
     margin-top: 80px;
 }
+.large-header-recommendation {
+    font-size: 40px;
+    margin-top: 80px;
+}
 
 .menu {
     height: 50px;
