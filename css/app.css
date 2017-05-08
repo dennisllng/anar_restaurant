@@ -501,7 +501,7 @@ img {
 .accBox {
   width:100%;
 	float: left;
-	background: #242424;
+	background: black;
   color: white;
 	font-size:.875em;
 	font-weight:700;
