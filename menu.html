@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/app.css">
 
     <!-- /// FONTS /// -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Droid+Sans|Gloria+Hallelujah|Jura|Khand|Mukta+Vaani|Noto+Sans|Palanquin+Dark|Poiret+One|Shadows+Into+Light" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
 
     <!-- /// FAVICON /// -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -37,160 +37,1458 @@
 
 </head>
 
-<body>
-
-    <nav class="stickynav">
-        <div class="row">
-
-
-            <div class="columns large-4 small-6 ">
-                <div class="top-bar-left">
-                    <a href="index.html">
-                        <h1 style="display:inline-block; font-family: 'Kaushan Script', cursive; font-size:30px; color: white; padding-left:20px;">Cơm Tấm </h1>
-                        <h1 style="display:inline-block; font-size:30px; color: red;">THANH</h1>
-                    </a>
-
-                </div>
+<body style="background-image:url('img/paper_texture.png');">
+    <nav class="top-bar row fullWidth position-relative">
+        <div class="top-bar-title">
+            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+              <button class="menu-icon" type="button" data-toggle></button>
+            </span>
+            <a class="navbar-brand" href="index.html"> <img src="img/logo1.png" alt="Cơm Tấm Thanh Logo" /> </a>
+        </div>
+        <div id="responsive-menu">
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li><a href="menu.html" class="sliding-u-l-r">Menu</a></li>
+                    <li><a href="hoursandlocations.html" class="sliding-u-l-r">Hours and Locations</a></li>
+                    <li><a href="about.html" class="sliding-u-l-r">Our Story</a></li>
+                </ul>
             </div>
-            <div class="column large-8 small-6">
-                <div id="responsive-menu">
-                    <div class="top-bar-right">
-                        <ul class="menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="hoursandlocations.html">Hours &amp; Locations</a></li>
-                            <li><a href="about.html">Our Story</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        </div>
     </nav>
-
 
     <!-- above nav Global bar  -->
     <section id="menu" class="no-padding">
         <div class="row">
             <div class="small-12 medium-12 large-12 columns text-center">
-                <h2 class="">Menu</h2>
-                <div class="margin-four no-margin-top"><img src="img/divider.png" alt="" />
+                <h2 class="large-header-menu">Menu</h2>
+                <div class="margin-four no-margin-top">
+                    <img src="img/divider.png" alt="" />
+                </div>
+                <a class="download-box" href="ctt-menu.pdf">Download Menu</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="no-margin">
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth padding-right-10px" style="background-image: url('img/appetizer-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Khai Vị</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Appetizers</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                    </div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">1. Gỏi Cuốn (3 Rolls) - $5.25</span>
+                                        <p class="display-block food-description">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">2. Gỏi Cuốn Cá (3 Rolls) - $5.25</span>
+                                        <p class="display-block food-description">Fish & Lettuce Spring Roll served with Peanut Sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">3. Gỏi Cuốn Gà (3 Rolls) - $5.25</span>
+                                        <p class="display-block food-description">Chicken, Vermicelli & Lettuce Spring Roll served with Peanut Sauce </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">4. Gỏi Cuốn Đậu Hủ  (3 Rolls) - $5.25</span>
+                                        <p class="display-block food-description">Tofu, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">5. Gỏi Cuốn Xoái - $5.25</span>
+                                        <p class="display-block food-description">Mango, Shrimp, Pork & Lettuce Spring Roll served with Peanut Sauce </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">6. Bò Bía  (3 Rolls) - $5.25</span>
+                                        <p class="display-block food-description">Egg, Dried Shrimp, Chinese Sausage & Vegetables Roll served with Peanut Sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">7.	Nem NuớngCuốn - $5.25</span>
+                                        <p class="display-block food-description">BBQ Pork & Lettuce Spring Roll served with Peanut Sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">8.	BìCuốn - $5.25</span>
+                                        <p class="display-block food-description">Shredded Pork & Lettuce Fresh Spring Roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">9. Gỏi Đu Đủ Tôm Thịt - $6.95</span>
+                                        <p class="display-block food-description">Shredded Green Papaya, Shrimp & Pork served with Fish Sauce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">10. Gỏi Đu Dủ Bò Khô Gan Cháy - $6.50</span>
+                                        <p class="display-block food-description">Shredded Green Papaya, Dried Beef Liver & Beef Jerky with House Suace</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">11. Chả Giò (3 Rolls) - $6.25</span>
+                                        <p class="display-block food-description">Deep Fried Egg Roll served with Lettuce </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">12. Tàu Hủ Ky (2 Pieces) - $6.95</span>
+                                        <p class="display-block food-description">Fry Bean Curd Skin Wrap in Shrimp served with Lettuce</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">13. Chạo (2 Pieces) - $6.95</span>
+                                        <p class="display-block food-description">Grilled Shrimp Paste on Sugar Cane Stick served with Lettuce</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/broken-rice-plate-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Cơm Tấm</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Broken Rice Plates</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                    </div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">14. Cơm Tấm Bì Chả - $6.50</span>
+                                        <p class="display-block food-description">Steam Rice with Shredded Pork & Steam Pork Cake</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">15. Cơm Tấm Thịt Nủờng - $6.95</span>
+                                        <p class="display-block food-description">Broken Rice w/ BBQ Slices Pork</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">16. Cơm Tấm Sườn Nướng - $7.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ BBQ Pork Chop</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">18. Cơm Tấm Bì Thịt Nuớng / Sườn BòĐại Hàn / Sườn Nướng - $7.25</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork & BBQ Pork Slices/Pork Chop/Beef/BBQ Pork Chop </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">19. Cơm Tấm Chả Thịt Nướng / Sườn BòĐại Hàn / Sườn Nướng - $7.25</span>
+                                        <p class="display-block food-description">Broken Rice w/ Steam Pork Cake & BBQ Pork Slices/Pork Chop/Beef/BBQ Pork Chop</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">20. Cơm Tấm Gà Nướng Tàu Hủ Ky - $8.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ BBQ Chicken & Fry Bean Curd Wrap in Shrimp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">21. Cơm Tấm Gà Nướng - $6.95</span>
+                                        <p class="display-block food-description">Broken Rice w/ Boneless BBQ Chicken</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">22. Cơm Tấm Gà Xối Mỡ - $6.95</span>
+                                        <p class="display-block food-description">Broken Rice w/ Deep Fried Chicken</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">23. Cơm Tấm Bì Chả Gà Nướng  - $8.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake & BBQ Chicken</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">24. Cơm Tấm To Tôm Nướng / Sườn Bò / Tàu Hủ Ky - $7.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ BBQ Shrimps</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">25. Cơm Tấm Bì Chả Thịt Nướng / Sườn/Bò / Sườn Nướng - $7.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ BBQ Pork Sliaces/Pork Chop/Korean Beef BBQ & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">26. Cơm Tấm Bì Chả Thịt Nướng / Sườn / Bò / Bườn Nướng - $7.95</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake/BBQ Pork Slices/Pork Chop/Korean Beef BBQ/BBQ Pork Chop</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">27. Cơm Tấm Bì Chả Thịt / Sườn / Bò Trứng Chiên - $8.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake/BBQ Pork Slices/Pork Chop/Korean Beef BBQ & Fry Egg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">28. Cơm Tấm Chả Tàu Hù Ky - $7.75</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">29. Cơm Tấm Bì Chả Thịt Nướng Tàu Hủ Ky - $9.25</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake, Pork Slices & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">30. Cơm Tấm Bì Chả Sườn Nướng, Tàu Hủ Ky - $9.25</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">31. Cơm Tấm Bì Chả Sườn Bò, Tàu Hủ Ky - $9.25</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake, Korean Beef BBQ & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">32. Cơm Tấm Bì Chả Sường Nướng Tôm Nướng - $8.85</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake, Pork Chop & Shrimps </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">33. Cơm Tấm Bì Chả Thịt Nướng Chạo Tôm Nướng Tàu Hủ Ky - $12.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake, BBQ Pork Slices, Sugar Cane Shrimp, Grilled Meat Balls & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">34. Cơm Tấm Bì Chả Sườn Nướng Chạo Tôm Nướng Tàu Hủ Ky - $12.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake, Pork Chop, Sugar Cane Shrimp, Grilled Meat Balls & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">35. Cơm TấmBì ChảSườn Bò Chạo Tôm Nướng Tàu Hủ Ky - $12.50</span>
+                                        <p class="display-block food-description">Broken Rice w/ Shredded Pork, Steam Pork Cake, BBQ Beef, Sugar Cane Shrimp, Grilled Meat Balls & Fry Bean Curd</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/beef-noodle-soup-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Phở</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Beef Noodle Soups</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text-add">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">REG. $7.25 LARGE $8.25</span>
+                                            <span class="food letter-spacing-1 display-block">ADD</span>
+                                            <ul class="food letter-spacing-1 display-block" style="list-style-type:disc">
+                                                <li>Rare Beef - $2.25</li>
+                                                <li>Beef Balls - $1.25</li>
+                                                <li>Veggies - $0.75</li>
+                                                <li>Wonton (3) - $2.00</li>
+                                                <li>Tendon (2) - $2.00</li>
+                                                <li>Chicken - $2.00</li>
+                                                <li>Noodle - $1.00</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">37. Phở Chín</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Beef Brisket</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">38. Phở Tái Chín</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Rare Beef & Beef Brisket</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">39. Phở Bò Viên</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Meat Balls</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">40. Phở Gà</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Chicken</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">41. Phở Tài Nạm Gân</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Rare Beef, Flank, Tendon & Tripe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">42. Phở Tôm</span>
+                                            <span class="food display-block">REG. $7.50 LARGE $8.50</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Shrimp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">43. Phở Rau Không Thịt</span>
+                                            <span class="food display-block">REG. $6.50 LARGE $7.50</span>
+                                            <p class="display-block food-description">Rice Noodle w/ Steam Vegetables</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">44. Phở Không</span>
+                                            <span class="food display-block">REG. $5.25 LARGE $6.25</span>
+                                            <p class="display-block food-description">Rice Noodle Soup</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="no-margin">
-            <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
-                <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
-                <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/appetizer-900-1200.jpg'); ">
-                    <div class="restaurant-menu-item z-index-1">
-                        <span class="title-large">Khai Vị</span>
-                        <div class="margin-four"><img src="img/divider.png" alt="" /></div>
-                        <span class="title-small">Appetizers</span>
+        <div class="container-fluid">
+            <div class="no-margin">
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth padding-right-10px" style="background-image: url('img/chow-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Phở / Mì Xào </span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Chow Fun / Chow Mein</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
                     </div>
-                    <div class="restaurant-menu-background">
-                        <div class="restaurant-menu-border z-index-2"></div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">58. Phở Bò Xà Rau - $8.50</span>
+                                        <p class="display-block food-description">Rice Noodles w/ Stir-Fry Beef & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">59. Phở Gà Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Rice Noodles w/ Stir-Fry Chicken & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">60. Phở Tôm Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Rice Noodles w/ Stir-Fry Shrimps & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">61. Phở Dậu Hủ Xáo Rau - $7.95</span>
+                                        <p class="display-block food-description">Rice Noodles & Stir-Fry Tofu & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">62. PhởÁp Chảo - $9.50</span>
+                                        <p class="display-block food-description">Crispy Rice Noodles, w/ Stir-Fry Shrimps, Chicken, Beef & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">63. Mì Bò Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Egg Noodles w/ Stir-Fry Beef & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">64. Mì Gà Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Egg Noodles w/ Stir-Fry Chicken & Vegetable</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">65. Mì Tôm Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Egg Noodles w/ Stir-Fry Shrimp & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">66. Mì Dậu Hủ Xào Rau - $7.95</span>
+                                        <p class="display-block food-description">Egg Noodles w/ Stir-Fry Tofu & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">67. Mì Xào Dòn - $9.50</span>
+                                        <p class="display-block food-description">Crispy Egg Noodles w/ Stir-Fry Shrimps, Chicken, Beef & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="restaurant-menu-text">
-                    <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
-                        <!-- menu item -->
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
-                            </div>
-                          </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/rice-vermicelli-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Bún</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Rice Vermicelli</span>
                         </div>
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
-                            </div>
-                          </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
                         </div>
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                    </div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">68. Bún Thịt Nướng - $6.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Pork & Vegetables</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">69. Bún Gà Nướng - $6.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Chicken & Vegetables</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">70. Bún Thịt Nướng Chả Giò - $7.75</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Pork, Egg Roll & Vegetables</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">71. Bún Tôm Thịt Nướng - $7.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Shrimp, BBQ Pork & Vegetables</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="menu-item">
-                          <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                            <div class="menu-text-sub">
-                                <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Gỏi Cuốn (3 Rolls) - $5.25</span>
-                                <p class="display-block">Shrimp, Pork, Vermicelli & Lettuce Spring Roll served with Peanut Sauce</p>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">72. Bún Tôm Thịt Nướng Chả Giò - $8.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Shrimp, BBQ Pork, Egg Roll & Vegetables</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">73. Bún Chạo Tôm, Chả Giò - $7.75</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Shrimp on Sugar Cane & Egg Roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">74. Bún Chạo Tôm, Nem Nướng - $7.75</span>
+                                        <p class="display-block food-description">Vermicelli w/ BBQ Shrimp on Sugar Cane & Pork Meat Ball</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">75. Bún Chạo Tôm, Thịt Nướng - $7.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ Shrimp on Sugar Cane & BBQ Pork</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">76. Bún Nem Nướng ChảGiò - $7.75</span>
+                                        <p class="display-block food-description">Vermicelli w/ Pork Meat Ball & Egg Roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">77. Bún Bì Nem Chua Chả Giò - $7.50</span>
+                                        <p class="display-block food-description">Vermicelli w/ Vermicelli w/ Shredded Pork, Beaf Sour Roll & Egg Roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">78. Canh Bún Hoặc Bún Riêu - $7.50</span>
+                                        <p class="display-block food-description">Vermicelli w/ Mixed Tomato Paste Seafood Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">79. Bún Riêu Ốc - $7.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ Snail in Mixed Tomato Paste Seafood Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">80. Bún Bò Huế - $7.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ Beef & Pork Spicy Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">81. Bún Vịt Xáo Măng - $8.95</span>
+                                        <p class="display-block food-description">Vermicelli w/ Duck & Bamboo Shoots Soup</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
-                <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
-                <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/rice-plate-900-1200.jpg'); ">
-                    <div class="restaurant-menu-item z-index-1">
-                        <span class="title-large">Cơm Dĩa</span>
-                        <div class="margin-four"><img src="img/divider.png" alt="" /></div>
-                        <span class="title-small">Rice Plates</span>
-                    </div>
-                    <div class="restaurant-menu-background">
-                        <div class="restaurant-menu-border z-index-2"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
-                <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
-                <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/beef-noodle-soup-900-1200.jpg'); ">
-                    <div class="restaurant-menu-item z-index-1">
-                        <span class="title-large">Phở-Beef</span>
-                        <div class="margin-four"><img src="img/divider.png" alt="" /></div>
-                        <span class="title-small">Noodle Soups</span>
-                    </div>
-                    <div class="restaurant-menu-background">
-                        <div class="restaurant-menu-border z-index-2"></div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/beef-stew-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Bò Kho</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Beef Stew</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">82. Bán Mì Bó Kho - $7.95</span>
+                                            <p class="display-block food-description">Beef Stew with French Bread</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">83. Phở Bò Kho - $7.95</span>
+                                            <p class="display-block food-description">Beef Stew with Rice Noodle</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">84. Mì Bò Kho - $7.95</span>
+                                            <p class="display-block food-description">Beef Stew with Egg Noodle</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
+        <div class="container-fluid">
+            <div class="no-margin">
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth padding-right-10px" style="background-image: url('img/porridge-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Cháo</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Porridge</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                    </div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">85. Cháo Gà - $7.95</span>
+                                        <p class="display-block food-description">Chicken Porridge</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">86.	Cháo Vịt - $8.95</span>
+                                        <p class="display-block food-description">Duck Porridge</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">60. Phở Tôm Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Rice Noodles w/ Stir-Fry Shrimps & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">87.	Cháo Huyết - $7.25</span>
+                                        <p class="display-block food-description">Pork Blood Porridge</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">88.	Cháo Cá - $7.95</span>
+                                        <p class="display-block food-description">Fish Porridge</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">63. Mì Bò Xào Rau - $8.50</span>
+                                        <p class="display-block food-description">Egg Noodles w/ Stir-Fry Beef & Vegetables</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">89. Cháo Bò - $7.95</span>
+                                        <p class="display-block food-description">Beef Porridge</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/fresh_rice_noodles-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Bánh Ướt</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Fresh Rice Noodles</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">90.	Bánh Ướt Thịt - $6.95</span>
+                                            <p class="display-block food-description">Fresh Flour Rolls w/ BBQ Pork Slices & Bean Sprouts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">91. Bánh Ướt Thanh Trì - $6.50</span>
+                                            <p class="display-block food-description">Fresh Flour Rolls w/ Pork Roll, Flour Cake & Bean Sprouts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">92. Bánh Cuớn Nhan Thịt - $6.95</span>
+                                            <p class="display-block food-description">Fresh Flour Rolls w/ Ground Pork, Pork Roll, Flour Cake & Bean Sprouts</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">93. Bánh Cuớn Dác Biết - $7.50</span>
+                                            <p class="display-block food-description">Fresh Flour Rolls Special Combination</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/beef-stew-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Thái Food</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">94.	Pad Thái - $8.25</span>
+                                            <p class="display-block food-description">Pad Thai</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">95. Cà Ri Thái Bành Mì - $8.25</span>
+                                            <p class="display-block food-description">Thai Curry with Bread</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">96. Cơm Cà Ri Thái - $8.25</span>
+                                            <p class="display-block food-description">Thai Curry with Steam Rice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="no-margin">
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth padding-right-10px" style="background-image: url('img/wonton-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Hoành Thánh </span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Wonton</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                    </div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">97.	Hoành Thánh - $6.95</span>
+                                        <p class="display-block food-description">Wonton Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">98.	Mì Hoành Thánh - $7.95</span>
+                                        <p class="display-block food-description">Wonton with Egg Noodle Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">99. Mì Đồ Biển - $8.50</span>
+                                        <p class="display-block food-description">Seafood Egg Noodle Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">100.	Hủ Tiếu Đồ Biển - $9.50</span>
+                                        <p class="display-block food-description">Seafood Rice Noodle Soup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/vegetarian-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Món Chay</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Vegetarian</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">101. Gỏi Cuồn Đậu Hủ - $5.25</span>
+                                            <p class="display-block food-description">Spring Roll Tofu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">102.	Phở Chay - $6.95</span>
+                                            <p class="display-block food-description">Vegetarian Rice Noodle Soup</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">103.	Cơm Xào Rau Đậu Hủ - $7.95</span>
+                                            <p class="display-block food-description">Sauteed Mixed Veggie Tofu over Rice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">104.	Phở Xào Rau Đậu Hủ - $7.95</span>
+                                            <p class="display-block food-description">Sauteed Rice Noodle with Mixed Veggie and Tofu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">105. Mì Xào Rau Đậu Hủ - $7.95</span>
+                                            <p class="display-block food-description">Sauteed Egg Noodle with Green Bean and Tofu </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">106.	Chả Giò Chay - $6.25</span>
+                                            <p class="display-block food-description">Vegetarian Egg Roll with Mixed Veggie</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">107.	Cơm Chiên Đậu Hủ Cà Rốt, Đậu - $7.95</span>
+                                            <p class="display-block food-description">Fried Rice with Green Bean and Carrot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">108.	Bún Dậu Hủ Chả Gió Chay - $6.95</span>
+                                            <p class="display-block food-description">Vermicelli with Egg Roll and Tofu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/add-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Add</span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Bì - $1.50</span>
+                                            <p class="display-block food-description">Shredded Pork </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Chả - $1.50</span>
+                                            <p class="display-block food-description">Steam Pork Cake</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Tôm - $1.00</span>
+                                            <p class="display-block food-description">Shrimp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Trứng Chiên - $1.25</span>
+                                            <p class="display-block food-description">Fried Egg </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Tàu Hủ Ky - $3.00</span>
+                                            <p class="display-block food-description">Bean Curd Skin w/ Shrimp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Cơm - $1.50</span>
+                                            <p class="display-block food-description">Steam Rice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Chả Giò  - $1.75</span>
+                                            <p class="display-block food-description">Egg Roll </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Sà Lách Dầu Dấm - $2.50</span>
+                                            <p class="display-block food-description">Lettuce with Oil Vinegar </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Miếng Gà - $4.95</span>
+                                            <p class="display-block food-description">BBQ Chicken </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Thịt Nướng, Sườn Nướng, Hoặc Bì - $14 per Pound</span>
+                                            <p class="display-block food-description">BBQ Pork, BBQ Pork Chop, Shredded Pork </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Sườn Bò Nướng - $20</span>
+                                            <p class="display-block food-description">BBQ Korean Beef </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Dĩa Thịt Nướng - $3.50</span>
+                                            <p class="display-block food-description">Grilled Pork </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Miếng Bò - $3.95</span>
+                                            <p class="display-block food-description">BBQ Korean Beef </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Miếng Sườn - $3.50</span>
+                                            <p class="display-block food-description">BBQ Pork Chop </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Chạo Tôm - $3.00</span>
+                                            <p class="display-block food-description">Grilled Shrimp Paste on Sugar Cane </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Cây Nem Nướng - $2.00</span>
+                                            <p class="display-block food-description">BBQ Pork Meat Ball </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Cái Nem Chua - $1.00</span>
+                                            <p class="display-block food-description">Sour Roll Meat </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Con Cá Kho - $6.00</span>
+                                            <p class="display-block food-description">Sauteed Fish </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Lạp Xưởng - $1.75</span>
+                                            <p class="display-block food-description">Chinese Sausage </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Bánh Mì - $1.00</span>
+                                            <p class="display-block food-description">French Bread </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Fried Rice or Red Rice  - $2.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">Extra Peanut or Fish Sauce - $0.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">To-Go Orders - Add $0.50 cents each</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="no-margin">
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth padding-right-10px" style="background-image: url('img/desserts-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Chè </span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Desserts</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                    </div>
+                    <div class="restaurant-menu-text">
+                        <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                            <!-- menu item -->
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">109. Ché 3 Màu - $3.25</span>
+                                        <p class="display-block food-description">Three Color Bean w/ Coconut Milk in Syrup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food letter-spacing-1 display-block">110. Chè Đậu Đỏ Bánh Lọt - $3.25</span>
+                                        <p class="display-block food-description">Red Bean w/ Tapioca & Coconut Milk</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">111. Sương Sa Hột Lựu - $3.25</span>
+                                        <p class="display-block food-description">Vietnamese Supreme Jello</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">112.	Thạch Đen Nước Dứa - $3.25</span>
+                                        <p class="display-block food-description">Black Jello w/ Coconut Milk in Syrup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">113.	Sâm Bô Lượng - $3.25</span>
+                                        <p class="display-block food-description">Dry Longan & Lotus Seed in Syrup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">115.	Sương Sâm Tươi - $3.25</span>
+                                        <p class="display-block food-description">Green Grass Jelly Drink</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="small-12 medium-12 large-12 menu-text">
+                                    <div class="menu-text-sub">
+                                        <span class="food display-block">116.	Nước Mía Nguyẽn Chất - $3.25</span>
+                                        <p class="display-block food-description">Fresh Sugar Cane Juice</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/smoothie-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Sinh Tố </span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Smoothies</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text-smoothie">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">117. Sinh Tố Trân Châu</span>
+                                            <p class="display-block food-description">Smooth w/ Pearl</p>
+                                            <ul class="food letter-spacing-1 display-block" style="list-style-type:disc">
+                                                <li>Strawberry / Dâu</li>
+                                                <li>Avocado / Bỏ</li>
+                                                <li>Mango / Xoài</li>
+                                                <li>Jackfruit / Mít</li>
+                                                <li>Sour Sop / Mãng Cầu</li>
+                                                <li>Taro / Khoai Môn</li>
+                                                <li>Green Apple / Táo</li>
+                                                <li>Durian / Sầu Riẽng</li>
+                                                <li>Pineapple / Thơm</li>
+                                                <li>Honeydew / Dưa Gang</li>
+                                                <li>Mocha / Mocha</li>
+                                                <li>Thai Tea / Trà Thái</li>
+                                                <li>Lychee / Trái Vải</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-4 columns restaurant-menu position-relative overflow-hidden">
+                    <!--<img data-interchange="[img/appetizer-small.jpg, small],   [img/appetizer-medium.jpg, medium], [img/appetizer-large.jpg, large]" alt="Khai Vị- Appetizers">-->
+                    <div class="restaurant-menu-image cover-background fullwidth" style="background-image: url('img/beverages-900-1200.jpg'); ">
+                        <div class="restaurant-menu-item z-index-1">
+                            <span class="title-large">Thức Uống </span>
+                            <div class="margin-four"><img src="img/divider.png" alt="" /></div>
+                            <span class="title-small">Beverages</span>
+                        </div>
+                        <div class="restaurant-menu-background">
+                            <div class="restaurant-menu-border z-index-2"></div>
+                        </div>
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('img/paper_texture.png');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">118. Cà Phê Đen Nóng Hoặc Đá - $2.95</span>
+                                            <p class="display-block food-description">French Black Coffee (Hot or with Ice)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">119.	Cà Phê Sữa Nóng Hoặc Đá - $2.95</span>
+                                            <p class="display-block food-description">French Black Coffee w/ Condensed Milk (Hot or with Ice)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">Tôm - $1.00</span>
+                                            <p class="display-block food-description">Shrimp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">120. Cam Vắt - $3.25</span>
+                                            <p class="display-block food-description">Fresh Orange Juice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">121.	Sữa Đậu Nành - $2.75</span>
+                                            <p class="display-block food-description">Soya Bean Milk</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">122.	Nước Dừa Tươi - $2.75</span>
+                                            <p class="display-block food-description">Fresh Young Coconut Juice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">123. Đá Chanh  - $2.75</span>
+                                            <p class="display-block food-description">Fresh Lemonade</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">124.	Soda Chanh / Xí Muội / Chanh Muối - $2.95</span>
+                                            <p class="display-block food-description">Fresh Lemon or Salted Plum or Salted Lemon w/ Soda</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">125.	Coke, 7-UP, Pepsi, Sprite, Orange Soda - $1.50</span>
+                                            <p class="display-block food-description">Soft Drinks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food letter-spacing-1 display-block">126. Trà Đá - $0.95</span>
+                                            <p class="display-block food-description">Iced Tea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="small-12 medium-12 large-12 menu-text">
+                                        <div class="menu-text-sub">
+                                            <span class="food display-block">127.	Trà Nóng - $1.00</span>
+                                            <p class="display-block food-description">Hot Tea (pot)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-
-
     <footer class="footer stickyfooter">
-    <h6 style="width:33%;"> Copyright CSU Webdesign Team 2017 <h6 style="width:65%;"> Tel:(408) 279-8588 * Address: 82 South Abel Street
-    Milpitas, CA 95035
-    United States</h6>
-
-
+        <h6 style="width:100%;"> Copyright CSU East Bay Web Design Team 2017</h6>
     </footer>
+
 
     <!-- do not touch the crap below  -->
 
