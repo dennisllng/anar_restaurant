@@ -10,6 +10,10 @@ font-family: 'Khand', sans-serif;
 font-family: 'Jura', sans-serif;
 font-family: 'Kaushan Script', cursive;
 */
+$(document).on("click", ".top", function() {
+	$(this).next(".middle").toggleClass("active");
+});
+
 @media screen only (max-width:950px)
        {
                     a img {
